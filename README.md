@@ -1,6 +1,6 @@
 # Modelagem de dados com PostgreSQL
 
-## Introduction
+## Introdução
 
 Esse é um projeto para praticar modelagem de dados com PostgreSQL e desenvolvimento de dashboards com Metabase.
 
@@ -38,7 +38,7 @@ Se você deseja executar esse projeto em sua máquina, você deve finalizar os s
 - Criar base de dados `sparkifydb`.
 - Instalar `Metabase`.
 
-### Instructions
+### Instruções
 
 1. Criar database/tablelas: `python create_tables.py`
 2. Enviar os dados dos arquivos, armazenando na base de dados: `python etl.py`
@@ -79,4 +79,3 @@ Se você deseja executar esse projeto em sua máquina, você deve finalizar os s
 
 - https://github.com/Via-88/Data-Modeling-with-Postgres
 - https://github.com/BaiHuang89/DataModelingWithPostgres
-
