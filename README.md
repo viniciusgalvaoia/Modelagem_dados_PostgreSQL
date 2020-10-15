@@ -4,15 +4,15 @@
 
 Esse é um projeto para praticar modelagem de dados com PostgreSQL e desenvolvimento de dashboards com Metabase.
 
-Esse projeto ajuda o time de analytics de uma startup chamada Sparkify analisando seus dados de músicas e as atividades de usuários.
+Esse projeto ajuda o time de analytics de uma startup de streaming de música, chamada Sparkify, analisando seus dados de músicas e as atividades de usuários.
 
-Definindo um star chema e escrevendo o pipeline ETL, os dados baseados em arquivos são transferidos para uma base de dados para análises futuras. 
+Definindo um star chema e escrevendo o pipeline ETL, os dados baseados em arquivos CSV são transferidos para uma base de dados para análises futuras. 
 
 ## Data Schema and ETL Pipeline
 
 ### Data Schema
 
-Sparkify deseja analisar quais múdicas os seus usários estão escutando.
+Sparkify deseja analisar quais músicas os seus usários estão escutando.
 
 Utilizando os conjuntos de dados songs e logs, foi criado um star schema como mostrado abaixo, que inclui
 
@@ -49,9 +49,9 @@ Se você deseja executar esse projeto em sua máquina, você deve finalizar os s
 
 - **data**
   - **log_data**
-    - dados de atividades dos usuários
+    - dados de ações dos usuários no app (Ex: Quais músicas eles estão escutando)
   - **song_data**
-    - dados das músicas
+    - dados sobre as músicas e os artistas
 - **images**
   - Imagens do documento
 - **create_tables.py**
@@ -63,7 +63,6 @@ Se você deseja executar esse projeto em sua máquina, você deve finalizar os s
 - **etl.py**
   - Script para implementaçao do processo de ETL.
   - Quando executado, esse script irá 
-  While executing, this script would:
     - Iterar entre todos arquivos dentro de data/song_data para extrair os dados de songs/artists e inserir na base de dados do PostgreSQL
     - Iterar entre todos arquivos dentro de data/log_data para extrair os dados de user/time/songplays e inserir na base de dados do PostgreSQL
 - **README.md**
