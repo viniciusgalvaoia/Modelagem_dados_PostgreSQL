@@ -33,9 +33,9 @@ O ETL pipeline extrai os dados dos arquivos `song_data.json` e `log_data.json` e
 
 Se você deseja executar esse projeto em sua máquina, você deve finalizar os seguintes passos primeiro.
 
-- Instalar `PostgreSQL` em localhost
+- Instalar `Python`
+- Instalar `PostgreSQL` em sua máquina
 - Criar usuário `postgres` com senha `admin`
-- Criar base de dados `sparkifydb`
 
 ### Instruções
 
